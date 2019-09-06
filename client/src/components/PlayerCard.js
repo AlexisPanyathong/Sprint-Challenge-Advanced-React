@@ -7,7 +7,7 @@ export default class PlayerCard extends React.Component {
         return (
 
             <Card>
-                <div className="player-card">
+                <div className="player-card" data-testid="player">
                     <Name>
                         {this.props.player.name}
                     </Name>
