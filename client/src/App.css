@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +30,15 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.dark-mode {
+  color: #F2B911;
+  background-color: #313843;
+  
+  
+  /* .nav-bar {
+    background-color: #1F2022;
+    border: none;
+  } */
 }

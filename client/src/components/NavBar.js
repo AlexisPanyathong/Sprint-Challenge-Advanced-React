@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDarkMode } from './hooks/useDarkMode';
+import { NavHeader, Navbar } from './StyledWidgets';
 
 const NavBar = () => {
     const [darkMode, setDarkMode] = useDarkMode();
@@ -9,14 +10,18 @@ const NavBar = () => {
     };
 
     return (
-        <nav className="nav-bar">
-            <h1>Women's World Cup</h1>
-            <div className="dark-mode-toggle">
-                <div 
-                onClick={toggleMode} 
-                className={darkMode ? 'toggle toggled' : 'toggle'} />
-            </div>
-        </nav>
+        <Navbar>
+            <nav className="nav-bar">
+                <NavHeader>
+                    <h1>Women's World Cup</h1>
+                </NavHeader>
+                <div className="dark-mode-toggle">
+                    <div 
+                    onClick={toggleMode} 
+                    className={darkMode ? 'toggle toggled' : 'toggle'} />
+                </div>
+            </nav>
+        </Navbar>
     );
 };
 
